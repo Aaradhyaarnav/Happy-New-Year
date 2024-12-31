@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy New Year 2025 - Jain Samajh Bakaner</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Countdown Section -->
+  <section id="countdown-section">
+    <div class="background-image">
+      <h1>Happy New Year 2025!</h1>
+      <div id="countdown"></div>
+    </div>
+  </section>
+
+  <!-- BEST OF 2024 Section -->
+  <section id="best-of-2024">
+    <h2>BEST OF 2024</h2>
+    <div class="image-gallery" id="image-gallery">
+      <!-- Images to be uploaded -->
+      <img src="1735650971583.jpg" alt="Image 1" height="400" width="250">
+      <img src="1735650971616.jpg" alt="Image 2" height="400" width="350">
+      <img src="1735650971652.jpg" alt="Image 3" height="400" width="300">
+      <img src="1735650971707.jpg" alt="Image 3" height="400" width="650">
+      <img src="1735650971761.jpg" alt="Image 3" height="400" width="250">
+      <img src="1735650971818.jpg" alt="Image 3" height="400" width="700">
+      <img src="1735650971853.jpg" alt="Image 3" height="400" width="750">
+      <img src="1735650971885.jpg" alt="Image 3" height="400" width="250">
+      <img src="1735650971924.jpg" alt="Image 3" height="400" width="500">
+
+      
+
+    </div>
+  </section>
+
+  <!-- Resolution Page with Popup -->
+  <section id="resolution">
+    <h2>Resolution</h2>
+    <button onclick="openPopup()">Submit Your Resolution</button>
+    <div id="popup-form" class="popup">
+      <form id="resolution-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name">
+        
+        <label for="phone">Phone (optional):</label>
+        <input type="text" id="phone" name="phone" placeholder="Enter your phone number">
+        
+        <label for="resolution-text">Resolution:</label>
+        <textarea id="resolution-text" name="resolution" required placeholder="Enter your New Year's resolution"></textarea>
+        
+        <button type="submit">Submit</button>
+        <button type="button" onclick="closePopup()">Cancel</button>
+      </form>
+    </div>
+    <div id="resolution-table">
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Resolution</th>
+          </tr>
+        </thead>
+        <tbody id="resolution-list">
+          <!-- Resolutions will be added here -->
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>Contact Us: 8889657966, 9329466772</p>
+    <p>Created By: Jain Samajh Bakaner - Aaradhy Badjatya</p>
+  </footer>
+</body>
+</html>

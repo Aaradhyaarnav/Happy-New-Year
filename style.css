@@ -1,0 +1,228 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  h1, h2 {
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* First Page with Countdown */
+  #countdown-section {
+    background-image: url('image.avif'); /* Replace with your background image URL */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+  
+  .background-image h1 {
+    font-size: 5rem;
+    color: #ffcc00;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  }
+  
+  #countdown {
+    font-size: 4rem;
+    color: #ffcc00;
+    margin-top: 20px;
+    animation: pulse 1s infinite;
+  }
+  
+  /* Rocket Animation */
+  .rocket {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: url('rocket-removebg-preview.png'); /* Rocket image */
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: fly 5s infinite;
+    opacity: 0;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes fly {
+    0% {
+      top: 100%;
+      left: 50%;
+      transform: rotate(0deg);
+    }
+    25% {
+      top: 10%;
+      left: 30%;
+      transform: rotate(90deg);
+    }
+    50% {
+      top: 0%;
+      left: 50%;
+      transform: rotate(180deg);
+    }
+    75% {
+      top: 10%;
+      left: 70%;
+      transform: rotate(270deg);
+    }
+    100% {
+      top: 100%;
+      left: 50%;
+      transform: rotate(360deg);
+    }
+  }
+  
+  #best-of-2024 {
+    padding: 80px 20px;
+    background-image: url('image.avif'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+  }
+  
+  #best-of-2024 h2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+  }
+  
+  #resolution {
+    padding: 80px 20px;
+    background-image: url('image.avif'); /* Replace with your background image */
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+  }
+  
+  #resolution h2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+  }
+  
+  button {
+    padding: 15px 25px;
+    font-size: 1.5rem;
+    border: none;
+    background-color: #ff4500;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ff6347;
+    transform: scale(1.1);
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  /* Resolution Popup Form */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 400px;
+    max-width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .popup label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .popup input,
+  .popup textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .popup button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .popup button:hover {
+    background-color: #45a049;
+  }
+  
+  #resolution-table {
+    margin-top: 40px;
+  }
+  
+  #resolution-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  #resolution-table th, #resolution-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  #resolution-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  
